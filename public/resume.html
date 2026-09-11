@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jemi Selvasilba P | Resume</title>
+    <style>
+      :root {
+        --bg: #f3f3f1;
+        --page: #ffffff;
+        --ink: #111111;
+        --muted: #4b4b4b;
+        --line: #d9d9d9;
+        --accent: #c89b3c;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+      }
+
+      .page {
+        width: 100%;
+        max-width: 980px;
+        margin: 32px auto;
+        background: var(--page);
+        border: 1px solid var(--line);
+        box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+        padding: 30px 32px 24px;
+      }
+
+      .header {
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 12px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.1rem;
+        letter-spacing: 0.04em;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        margin-top: 8px;
+        font-size: 0.78rem;
+        color: var(--muted);
+      }
+
+      .meta span::after {
+        content: " | ";
+      }
+
+      .meta span:last-child::after {
+        content: "";
+      }
+
+      .section {
+        margin-top: 18px;
+        border: 1px solid var(--line);
+        background: #fafafa;
+      }
+
+      .section h2 {
+        margin: 0;
+        padding: 10px 14px;
+        font-size: 1.08rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        background: #f0f0f0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .section-body {
+        padding: 10px 14px 14px;
+      }
+
+      .summary {
+        margin: 0;
+        font-size: 0.98rem;
+        line-height: 1.6;
+      }
+
+      .skills {
+        margin: 0;
+        padding-left: 18px;
+        line-height: 1.8;
+        font-size: 0.97rem;
+      }
+
+      .skills li {
+        list-style: disc;
+      }
+
+      .job-head,
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+        flex-wrap: wrap;
+      }
+
+      .job-title {
+        font-size: 1.02rem;
+        font-weight: 700;
+      }
+
+      .company {
+        font-weight: 700;
+      }
+
+      .period {
+        font-weight: 600;
+        color: var(--muted);
+      }
+
+      .project {
+        margin-top: 10px;
+      }
+
+      .project h3 {
+        margin: 0 0 6px;
+        font-size: 1rem;
+      }
+
+      .project p,
+      .detail {
+        margin: 0;
+        line-height: 1.6;
+      }
+
+      ul {
+        margin: 8px 0 0;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      .academic {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.97rem;
+      }
+
+      .academic td {
+        padding: 7px 0;
+        border-bottom: 1px solid #ececec;
+        vertical-align: top;
+      }
+
+      .academic td:first-child {
+        width: 52%;
+        font-weight: 600;
+      }
+
+      .academic td:nth-child(2) {
+        width: 26%;
+        text-align: right;
+      }
+
+      @media (max-width: 720px) {
+        .page {
+          margin: 0;
+          border: none;
+          box-shadow: none;
+          padding: 20px 18px;
+        }
+
+        h1 {
+          font-size: 1.7rem;
+        }
+
+        .job-head,
+        .row {
+          display: block;
+        }
+
+        .period {
+          display: block;
+          margin-top: 6px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Jemi Selvasilba P</h1>
+        <div class="meta">
+          <span>+91 6369622204</span>
+          <span>pjemiselvasilba@gmail.com</span>
+          <span>pjemiselvasilba-ops</span>
+          <span>github.com/pjemiselvasilba-ops</span>
+          <span>linkedin.com/in/p-jemiselva-silba-b1408a326</span>
+        </div>
+      </header>
+
+      <section class="section">
+        <h2>Professional Summary</h2>
+        <div class="section-body">
+          <p class="summary">
+            MERN Stack Developer with practical experience developing real-world full-stack applications during internship and academic projects. Experienced in frontend development, backend APIs, database integration, authentication, and CRUD operations.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Technical Skills</h2>
+        <div class="section-body">
+          <ul class="skills">
+            <li><strong>Programming Languages:</strong> C, C++, JavaScript</li>
+            <li><strong>Frontend:</strong> HTML, CSS, React.js, Tailwind CSS</li>
+            <li><strong>Backend:</strong> Node.js, Express.js, REST APIs</li>
+            <li><strong>Database:</strong> MongoDB, Mongoose, MySQL</li>
+            <li><strong>Tools:</strong> Git, GitHub, VS Code, Postman, MongoDB Compass, Netlify, Vercel</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Internship</h2>
+        <div class="section-body">
+          <div class="job-head">
+            <div>
+              <div class="company">Full Stack Development Intern — Digisailor Pvt. Ltd.</div>
+            </div>
+            <div class="period">June 2026 - July 2026</div>
+          </div>
+          <ul>
+            <li>Developed full-stack web applications using the MERN stack for real-world use cases.</li>
+            <li>Implemented authentication, CRUD operations, and RESTful APIs for food donation and request workflows.</li>
+            <li>Designed database schemas and modules for donor, NGO, and admin interactions using MongoDB and Mongoose.</li>
+            <li>Built and connected frontend interfaces with backend services for seamless end-to-end functionality.</li>
+            <li>Worked on project deployment and collaborated with team members to deliver the application successfully.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Projects</h2>
+        <div class="section-body">
+          <div class="project">
+            <h3>Smart Food Sharing and Donation Platform</h3>
+            <p>
+              Full-stack web application connecting donors and NGOs to reduce food wastage and manage food donation requests efficiently.
+            </p>
+            <ul>
+              <li><strong>Tech Stack:</strong> MongoDB, Express.js, React.js, Node.js, Tailwind CSS</li>
+              <li><strong>Features:</strong> JWT authentication, role-based access, donor/NGO portals, admin dashboard, food donation and request management.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Task Manager</h3>
+            <p>
+              Task management application with secure authentication and full CRUD-based task operations.
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Global Commerce Compass</h3>
+            <p>
+              Product comparison and search platform to compare products and analyze trends across global commerce data.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Academic Details</h2>
+        <div class="section-body">
+          <table class="academic">
+            <tbody>
+              <tr>
+                <td>Master of Computer Applications (MCA) — Francis Xavier Engineering College, Tirunelveli</td>
+                <td>2025 - 2027</td>
+              </tr>
+              <tr>
+                <td>B.Sc. in Information Technology — Pope's College, Manonmaniam Sundaranar University</td>
+                <td>2022 - 2025</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Certifications</h2>
+        <div class="section-body">
+          <ul>
+            <li>NPTEL - Cloud Computing</li>
+            <li>Generative AI Studio</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

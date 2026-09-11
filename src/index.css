@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #0f1720;
+  --color-ink-dim: #46545d;
+  --color-ink-faint: #6f7d86;
+
+  --color-bg: #f4efe7;
+  --color-bg-raised: #fbf8f2;
+  --color-bg-panel: #ffffff;
+
+  --color-line: #e4ddd0;
+  --color-line-soft: #efe7dc;
+
+  --color-gold: #c78b2b;
+  --color-gold-soft: #dba949;
+  --color-teal: #2c6e69;
+  --color-teal-soft: #4d9189;
+  --color-clay: #c76d4a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(44,110,105,0.10), transparent 25%),
+    radial-gradient(circle at bottom right, rgba(199,139,43,0.10), transparent 25%),
+    var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(199, 139, 43, 0.22);
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: #d9ccb4; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-gold); }
